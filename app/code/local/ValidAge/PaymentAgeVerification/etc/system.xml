@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <validage translate="label" module="paymentageverification">
+            <label>ValidAge</label>
+            <sort_order>100</sort_order>
+        </validage>
+    </tabs>
+    <sections>
+        <validage_options translate="label" module="paymentageverification">
+            <label>Age Verification Checkout</label>
+            <tab>validage</tab>
+            <sort_order>1000</sort_order>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <validage_group translate="label" module="paymentageverification">
+                    <label>Age Verification Checkout Configuration</label>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <validage_public_key translate="label">
+                            <label>Validage Public Key : </label>
+                            <comment><![CDATA[
+                            <a href="https://validage.com" target="_blank">
+                                If you don't have a key click here  to register and get your key for FREE.
+                            </a>
+                        ]]>                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </validage_public_key>
+                        <validage_secret_key translate="label">
+                            <label>Validage Secret Key : </label>
+                            <comment><![CDATA[
+                            <a href="https://validage.com" target="_blank">
+                                If you don't have a key click here  to register and get your key for FREE.
+                            </a>
+                        ]]>                            </comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </validage_secret_key>
+                    </fields>
+                </validage_group>
+            </groups>
+        </validage_options>
+    </sections>
+</config>

@@ -1,0 +1,12 @@
+<?php
+//echo "This is For ALL Pages \n";
+$key = Mage::getStoreConfig('validage_options/validage_group/validage_public_key',Mage::app()->getStore());
+echo '<script src="https://cache.validage.com/'.$key.'.js" type="text/javascript"></script>';
+
+$handle = $this->getLayout()->getUpdate()->getHandles();
+$current_url = Mage::helper('core/url')->getCurrentUrl();
+if((strpos($current_url ,"onepage") > 0 || strpos($current_url,"checkout") > 0) && strpos($current_url,"cart") === FALSE)
+{
+	echo "<script type='text/javascript' src='https://cache.validage.com/abc.js'></script>";	
+	
+}

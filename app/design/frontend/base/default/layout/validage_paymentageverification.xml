@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>
+        <reference name="head">
+           <block type="core/template" name="add-validage-script" template="validage/validageScript.phtml"/>
+        </reference>
+    </default>
+</layout>

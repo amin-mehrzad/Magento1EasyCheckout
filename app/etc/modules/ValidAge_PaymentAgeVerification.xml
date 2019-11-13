@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ValidAge_PaymentAgeVerification>
+            <active>true</active>
+            <codePool>local</codePool>
+        </ValidAge_PaymentAgeVerification>
+    </modules>
+</config>
